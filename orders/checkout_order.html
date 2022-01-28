@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GeekShop - Заказы</title>
+    <title>GeekShop - Оформление заказа</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -67,39 +67,42 @@
 <!-- Page Content -->
 <section>
     <div class="container">
-        <div class="text-center mt-5">
-            <h1>Заказы</h1>
-            <div class="orders mt-5">
-                <table class="table">
-                    <thead>
-                    <tr class="table-light">
-                        <th scope="col">#</th>
-                        <th scope="col">Статус</th>
-                        <th scope="col">Создан</th>
-                        <th scope="col">Итого</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Оформляется</td>
-                        <td>21 авг. 21 года</td>
-                        <td>5 070 руб.</td>
-                    </tr>
-                    <tr class="table-success">
-                        <th scope="row">2</th>
-                        <td>Досталвен</td>
-                        <td>16 июля 21 года</td>
-                        <td>4 876 руб.</td>
-                    </tr>
-                    <tr class="table-info">
-                        <th scope="row">3</th>
-                        <td>В пути</td>
-                        <td>14 нояб. 21 года</td>
-                        <td>9 566 руб.</td>
-                    </tr>
-                    </tbody>
-                </table>
+        <div class="py-5 text-center">
+            <h1>Оформление заказа</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Корзина</span>
+                    <span class="badge badge-primary badge-pill text-white">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Product name</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">5 700 руб.</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Second product</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">3 200 руб.</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Third item</h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <span class="text-muted">4 299 руб.</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Сумма к оплате</span>
+                        <strong>13 199 руб.</strong>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
