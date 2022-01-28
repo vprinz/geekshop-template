@@ -66,6 +66,9 @@
 
 <!-- Page Content -->
 <section>
+    <div class="alert alert-success text-center" role="alert">
+        Заказ №123456 оформлен. Перейти к <a href="orders.html" class="alert-link">списку заказов</a>
+    </div>
     <div class="container">
         <div class="py-5 text-center">
             <h1>Оформление заказа</h1>
@@ -103,6 +106,58 @@
                         <strong>13 199 руб.</strong>
                     </li>
                 </ul>
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Адрес доставки</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Фамилия</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <label for="email" class="form-label">Адрес электронной почты</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <label for="address" class="form-label">Адрес</label>
+                            <input type="text" class="form-control" id="address" placeholder="ул. Мира, дом 6" required>
+                        </div>
+
+                        <div class="col-md-5 mt-3">
+                            <label for="country" class="form-label">Страна</label>
+                            <select class="form-control" id="country" required>
+                                <option value="">Выбор...</option>
+                                <option>Россия</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 mt-3">
+                            <label for="state" class="form-label">Регион</label>
+                            <select class="form-control" id="state" required>
+                                <option value="">Выбор...</option>
+                                <option>Московская область</option>
+                                <option>Краснодарский край</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3 mt-3">
+                            <label for="zip" class="form-label">Индекс</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Продолжить</button>
+                </form>
             </div>
         </div>
     </div>
